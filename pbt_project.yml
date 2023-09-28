@@ -25,6 +25,20 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/pip2:
+    name: pip2
+    description: ''
+    author: poojas@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-09-28 10:00:23'
+    datasets:
+      inputs:
+      - datasets/customers
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/customers:
     name: customers
