@@ -11,3 +11,7 @@ Release 2.0
 *** Release notes for version: 3.0 ***
 
 frg
+
+*** Release notes for version: 4.0 ***
+
+Release 4.0
