@@ -40,30 +40,7 @@ datasets:
         author: poojas@prophecy.io
         createdAt: '2023-09-28 06:51:09'
 templates: {}
-jobs:
-  jobs/grgrg:
-    name: grgrg
-    description: ''
-    fabricUID: 6493
-    scheduler:
-      Composer: {}
-    cloudProvider: null
-    jobSize: null
-    scheduleCron: 0 0/1 * * *
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Single: {}
-      clusterId: null
-    enabled: null
-    createdAt: '2023-09-27 09:11:25'
-    author: poojas@prophecy.io
+jobs: {}
 gemContainer:
   languageVersion: '3.10'
   gemLibsVersion: 1.3.2.0
