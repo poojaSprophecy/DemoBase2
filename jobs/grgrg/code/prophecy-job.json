@@ -1,0 +1,157 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "6493",
+    "jobId" : "jobs/grgrg",
+    "name" : "grgrg",
+    "dagName" : "uitesting_poojas_DemoBase2New_grgrg",
+    "schedule" : "0 0/1 * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "availableFabrics" : [ {
+      "id" : "6493",
+      "name" : "test-airflow"
+    }, {
+      "id" : "7279",
+      "name" : "MWAA"
+    }, {
+      "id" : "10769",
+      "name" : "fvf"
+    }, {
+      "id" : "10770",
+      "name" : "composer-1"
+    }, {
+      "id" : "11511",
+      "name" : "PMA-isolated",
+      "trialStartDate" : 1695135156623
+    } ],
+    "catchup" : true,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    }
+  },
+  "processes" : {
+    "QsVSO0Bi-Ou-d__3Ddt6N$$uhzOidfgyhM0MHH_qBzO6" : {
+      "id" : "QsVSO0Bi-Ou-d__3Ddt6N$$uhzOidfgyhM0MHH_qBzO6",
+      "component" : "EMRPipeline",
+      "metadata" : {
+        "label" : "EMRPipeline_0",
+        "slug" : "EMRPipeline_0",
+        "x" : -320,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "z8sRZqaPD5P01xABv3KIh$$kAyxT4pWj30vcyDkttzUj",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "9ye9VSZ5Holx0LFf3f1A9$$j5fFJ01ZqQTyQKlNIn5l4",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "actionOnFailure" : "CONTINUE",
+        "clusterSize" : null,
+        "jobFlowId" : null,
+        "awsConnId" : "aws_default",
+        "steps" : null,
+        "taskId" : null,
+        "pipelineId" : null
+      }
+    },
+    "F19I1UWql3PP7ZG1Yk5DO$$wLCFsSjowXUTand6Mx1GX" : {
+      "id" : "F19I1UWql3PP7ZG1Yk5DO$$wLCFsSjowXUTand6Mx1GX",
+      "component" : "EMRCreateCluster",
+      "metadata" : {
+        "label" : "EMRCreateCluster_1",
+        "slug" : "EMRCreateCluster_1",
+        "x" : -480,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "M2o71BDMfTJZR-TCmd1WE$$gBQ5KlLcwWiKsWxb1sfyT",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "qA34LOPvc-hqn138vcV5u$$qf2dUMZUcvcUZATL9KisM",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "awsConnId" : null,
+        "emrConnId" : null,
+        "jobFlowOverrides" : null,
+        "regionName" : null,
+        "taskId" : null
+      }
+    },
+    "AyXftwN9Q6XVCVrxU7vxL$$syMZ4SI2ObVPWzwzHmnwY" : {
+      "id" : "AyXftwN9Q6XVCVrxU7vxL$$syMZ4SI2ObVPWzwzHmnwY",
+      "component" : "TriggerDag",
+      "metadata" : {
+        "label" : "TriggerDag_1",
+        "slug" : "TriggerDag_1",
+        "x" : -120,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "CfjnXkJIX8F1vmsV9XJxY$$fGkfaHu19RdnYDmIa7K3_",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "7Qd8pDklk1nw350aCtPZi$$FdrOIq9Kw0EQQQViYBr_g",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "pokeInterval" : null,
+        "resetDagRun" : false,
+        "executionDate" : null,
+        "dagId" : null,
+        "selectionType" : "job",
+        "conf" : null,
+        "jobId" : null,
+        "waitForCompletion" : false,
+        "runId" : null,
+        "taskId" : null
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "GJXQmAgPmzhidB2pJvekp$$AJnPK2gCYRijP_hjQA_r2",
+    "source" : "F19I1UWql3PP7ZG1Yk5DO$$wLCFsSjowXUTand6Mx1GX",
+    "target" : "QsVSO0Bi-Ou-d__3Ddt6N$$uhzOidfgyhM0MHH_qBzO6",
+    "sourcePort" : "qA34LOPvc-hqn138vcV5u$$qf2dUMZUcvcUZATL9KisM",
+    "targetPort" : "z8sRZqaPD5P01xABv3KIh$$kAyxT4pWj30vcyDkttzUj"
+  }, {
+    "id" : "34DQPn-eXxThsGB77DQiY$$Mo2LSRC9elgV8GnAGIMW-",
+    "source" : "QsVSO0Bi-Ou-d__3Ddt6N$$uhzOidfgyhM0MHH_qBzO6",
+    "target" : "AyXftwN9Q6XVCVrxU7vxL$$syMZ4SI2ObVPWzwzHmnwY",
+    "sourcePort" : "9ye9VSZ5Holx0LFf3f1A9$$j5fFJ01ZqQTyQKlNIn5l4",
+    "targetPort" : "CfjnXkJIX8F1vmsV9XJxY$$fGkfaHu19RdnYDmIa7K3_"
+  } ]
+}

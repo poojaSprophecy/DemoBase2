@@ -1,0 +1,81 @@
+{
+  "id" : "aN48wMh8h5QRtNibOgVGo",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false,
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "gU4fXSjeYt3uI3Z1sXlns",
+      "slug" : "in0",
+      "isStreaming" : false
+    } ],
+    "outputs" : [ {
+      "id" : "jDeNE7w0vfW2B40xVMCOx",
+      "slug" : "out0"
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "properties" : {
+    "packageName" : "frg"
+  },
+  "connections" : [ ],
+  "processes" : {
+    "m00TkdUDnKuVsuq5GDSku" : {
+      "id" : "m00TkdUDnKuVsuq5GDSku",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_2",
+        "slug" : "Filter_2",
+        "x" : -700,
+        "y" : 60,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "r3p3ed45U8sQAk45vxS_n",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Rk6zA3Es_9iWcJHSdUSLY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/wD3Rheoe_team_8768/wD3Rheoe_project_34935.git&subPath=&tag=0.0.3&projectSubscriptionProjectId=34935&path=gems/Filter",
+        "projectId" : "34935",
+        "projectName" : "ProphecySparkBasicsPython",
+        "version" : "0.0.3"
+      }
+    }
+  },
+  "externalDependencies" : [ ]
+}

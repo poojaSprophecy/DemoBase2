@@ -4,9 +4,9 @@
       "gemBuilderVersion" : "v1"
     },
     "id" : "1",
-    "uri" : "pipelines/workflow",
+    "uri" : "pipelines/pip1",
     "language" : "python",
-    "fabricId" : "4454",
+    "fabricId" : "11527",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -22,7 +22,25 @@
     "configuration" : {
       "common" : {
         "type" : "record",
-        "fields" : [ ]
+        "fields" : [ {
+          "name" : "twsr",
+          "kind" : {
+            "type" : "string",
+            "value" : "ewfwef"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "fefefg",
+          "kind" : {
+            "type" : "boolean",
+            "value" : true
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        } ]
       },
       "oldCommon" : {
         "type" : "record",
@@ -60,7 +78,35 @@
     "configurationVersion" : "v1"
   },
   "connections" : [ ],
-  "processes" : { },
+  "processes" : {
+    "0H8QpJhf7a0gB6jUVIjRC$$2__Bi9nLIlxzAzD32-hn8" : {
+      "id" : "0H8QpJhf7a0gB6jUVIjRC$$2__Bi9nLIlxzAzD32-hn8",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : -480,
+        "y" : -80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "um06iF3ifs_umSTka6FnW$$_MhC28_zFFUVpsP6zMXFJ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/customers"
+      }
+    }
+  },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],

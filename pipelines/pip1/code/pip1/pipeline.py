@@ -8,7 +8,7 @@ from prophecy.utils import *
 from pip1.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    pass
+    df_customers = customers(spark)
 
 def main():
     spark = SparkSession.builder\
