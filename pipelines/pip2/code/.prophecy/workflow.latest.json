@@ -4,7 +4,7 @@
       "gemBuilderVersion" : "v1"
     },
     "id" : "1",
-    "uri" : "pipelines/workflow",
+    "uri" : "pipelines/pip2",
     "language" : "python",
     "fabricId" : "4454",
     "frontEndLanguage" : "sql",
