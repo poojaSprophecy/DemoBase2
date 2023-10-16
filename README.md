@@ -15,3 +15,7 @@ frg
 *** Release notes for version: 4.0 ***
 
 Release 4.0
+
+*** Release notes for version: 6.0 ***
+
+ded
