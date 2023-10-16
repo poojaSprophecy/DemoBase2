@@ -1,0 +1,53 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "6493",
+    "jobId" : "jobs/fkjrfk",
+    "name" : "fkjrfk",
+    "dagName" : "uitesting_poojas_DemoBase2New_fkjrfk",
+    "schedule" : "0 0/1 * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "availableFabrics" : [ {
+      "id" : "6493",
+      "name" : "test-airflow"
+    }, {
+      "id" : "7279",
+      "name" : "MWAA"
+    }, {
+      "id" : "10769",
+      "name" : "fvf"
+    }, {
+      "id" : "10770",
+      "name" : "composer-1"
+    }, {
+      "id" : "11511",
+      "name" : "PMA-isolated",
+      "trialStartDate" : 1695135156623
+    } ],
+    "catchup" : true,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    }
+  },
+  "processes" : { },
+  "connections" : [ ]
+}
